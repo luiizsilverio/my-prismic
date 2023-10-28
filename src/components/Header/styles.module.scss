@@ -1,0 +1,87 @@
+.container {
+  height: 6rem;
+  border-bottom: 1px solid var(--GRAY-200);
+  background-color: var(--GRAY-700);
+}
+
+.content {
+  max-width: 1120px;
+  height: 6rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+    height: 6rem;
+  }
+
+  nav {
+    margin-left: 5rem;
+    height: 6rem;
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      height: 6rem;
+      line-height: 6rem;
+      color: var(--GRAY-100);
+      transition: color 0.2s;
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        color: var(--WHITE);
+      }
+
+      &:active {
+        color: var(--YELLOW-500);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.comecarBtn {
+  margin-left: auto;
+  height: 3rem;
+  border-radius: 18px;
+  background-color: var(--BLUE-900);
+  border: 0;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--WHITE);
+  font-weight: bold;
+  transition: all .2s;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+@media (max-width: 870px) {
+  .container {
+    height: 11rem;
+    padding: .5rem 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    nav {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .comecarBtn {
+      display: none;
+    }
+  }
+}
