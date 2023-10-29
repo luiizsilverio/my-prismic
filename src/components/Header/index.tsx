@@ -9,20 +9,20 @@ export default function Header() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <a>
-          <Image src={LogoSvg} alt="Sujeito logo" />
-        </a>
+        <ActiveLink href="/">
+          <Image src={LogoSvg} alt="Sujeito logo" className={styles.logo} />
+        </ActiveLink>
 
         <nav>
           <ActiveLink href="/">
             <span>Início</span>
           </ActiveLink>
-          <Link href="/posts">
-            Conteúdo
-          </Link>
-          <Link href="/sobre">
-            Quem somos
-          </Link>
+          <ActiveLink href="/posts">
+            <span>Conteúdo</span>
+          </ActiveLink>
+          <ActiveLink href="/sobre">
+            <span>Quem somos</span>
+          </ActiveLink>
         </nav>
 
         <a href="https://github.com/luiizsilverio" type='button' className={styles.comecarBtn}>

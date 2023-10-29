@@ -10,12 +10,11 @@ interface Props extends LinkProps{
 
 export default function ActiveLink({ children, ...rest }: Props) {
   const { asPath } = useRouter()
-
-  const className = asPath === rest.href ? "active" : '';
+  const linkAtivo = (asPath === rest.href);
 
   return (
-    <Link href="/" {...rest}>
-      {cloneElement(children, { className })}
+    <Link {...rest}>
+      {cloneElement(children, { className: linkAtivo ? styles.active : null })}
     </Link>
   )
 }

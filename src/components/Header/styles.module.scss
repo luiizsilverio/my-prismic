@@ -21,7 +21,7 @@
     margin-left: 5rem;
     height: 6rem;
 
-    a {
+    a  {
       display: inline-block;
       position: relative;
       padding: 0 0.5rem;
@@ -38,10 +38,10 @@
         color: var(--WHITE);
       }
 
-      &:active {
-        color: var(--YELLOW-500);
-        font-weight: bold;
-      }
+      // &:active {
+      //   color: var(--YELLOW-500);
+      //   font-weight: bold;
+      // }
     }
   }
 }
@@ -49,7 +49,7 @@
 .comecarBtn {
   margin-left: auto;
   height: 3rem;
-  border-radius: 18px;
+  border-radius: 7px;
   background-color: var(--BLUE-900);
   border: 0;
   padding: 0 1.5rem;
@@ -74,6 +74,10 @@
   .content {
     display: flex;
     flex-direction: column;
+
+    img {
+      height: auto;
+    }
 
     nav {
       display: block;
