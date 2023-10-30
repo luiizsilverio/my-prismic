@@ -1,6 +1,9 @@
-import Head from 'next/head';
-import styles from '@/styles/home.module.scss';
 import Link from 'next/link';
+import Head from 'next/head';
+import Image from 'next/image';
+
+import TechImg from '../../public/images/techs.svg';
+import styles from '@/styles/home.module.scss';
 
 export default function Home() {
   return (
@@ -13,7 +16,7 @@ export default function Home() {
           <section className={styles.ctaText}>
             <h1>Levando você ao próximo nível!</h1>
             <span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quos, quasi quas eius magni quisquam dolore a distinctio labore vero expedita excepturi alias. Dicta sequi distinctio, ab animi id libero.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quos, quasi quas eius magni quisquam dolore a distinctio labore vero expedita excepturi alias sequi.
             </span>
             <Link href="/">
               <button>COMEÇAR AGORA!</button>
@@ -46,6 +49,14 @@ export default function Home() {
           </section>
         </div>
 
+        <footer className={styles.nextLevel}>
+          <Image src={TechImg} alt="Tecnologias" />
+          <h2>Mais de <span>5 mil</span> já levaram sua carreira ao próximo nivel.</h2>
+          <span>E você, vai perder a chance de evoluir de uma vez por todas?</span>
+          <Link href="#">
+            <button>COMEÇAR AGORA!</button>
+          </Link>
+        </footer>
       </main>
     </>
   )

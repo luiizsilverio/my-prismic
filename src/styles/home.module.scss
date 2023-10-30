@@ -22,18 +22,19 @@
 
   h1{
     font-size: 3.5rem;
-    line-height: 4.5rem;
+    line-height: 4.2rem;
     font-weight: 700;
-    margin-top: 2.5rem;
+    // margin-top: 1.5rem;
   }
 
   span{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2.25rem;
   }
 
   button{
     background-color: var(--BLUE-900);
+    color: var(--WHITE);
     border:0;
     padding: 1rem 1.8rem;
     margin-top: 2.5rem;
@@ -72,14 +73,107 @@
   }
 
   span{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2.25rem;
   }
 }
 
-@media (max-width: 1180px) {
-  .containerHeader{
-    padding: 18px;
+.nextLevel{
+  max-width: 1120px;
+  margin: 6rem auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  h2{
+    font-size: 2.5rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+
+    span{
+      font-size: 2.5rem;
+      line-height: 4.5rem;
+      font-weight: 700;
+      color: var(--BLUE-900);
+    }
+  }
+
+  span{
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+  }
+
+  button{
+    background-color: var(--BLUE-900);
+    color: var(--WHITE);
+    border:0;
+    padding: 1rem 1.8rem;
+    margin-top: 2.5rem;
+    border-radius: 6px;
+    font-weight: bold;
   }
 }
 
+@media (max-width: 1095px) {
+  .container {
+    .containerHeader{
+      padding: 0 2rem;
+
+      button {
+        display: block;
+      }
+    }
+
+    img {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    span{
+      font-size: 1rem;
+    }
+
+    .sectionContent, .nextLevel {
+      padding: 0 2rem;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    .containerHeader {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+      }
+
+      h1 {
+        margin-top: 2rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .sectionContent {
+    flex-direction: column;
+    margin: 0 auto;
+
+    img {
+      max-width: 400px;
+      margin: 2rem 0;
+    }
+
+  }
+}
