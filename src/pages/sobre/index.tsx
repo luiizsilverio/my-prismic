@@ -7,6 +7,7 @@ export default function Sobre() {
       <Head>
         <title>Sujeito - Quem somos</title>
       </Head>
+      <h1>QUEM SOMOS</h1>
     </>
   )
 }
